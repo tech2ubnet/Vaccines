@@ -1,50 +1,358 @@
-.header {padding: 20px; text-align: center; color: white;}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
 
-.Menu a{color: blue; text-decoration: none; text-align: center; float: left; width: 10%; height: 10%; font-size: 25px;}
-.MenuH a{color: gray; text-decoration: none; text-align: center; float: right; width: 10%; height: 10%; font-size: 25px;}
-.MenuH a:hover{background-color: blue; color: white;}
+/* Header */
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
 
-.title{font-size: 60px; margin-bottom: 50px; margin-left: 100px;}
-.Encabezado img{width: 500px; height: 500px; float: right; margin-bottom: 50px;}
-.Encabezado p{font-size: 20px; font-weight: 500; margin-left: 100px; margin-bottom: 60px;}
+header a{
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+}
 
-.Encabezado li{list-style-type:none; position:relative; width: 250px; text-align: left;}                
-.Encabezado li a{text-decoration:none; display:block; padding:5px 15px; width:250px; margin-left: 100px;
-                height:30px; color:black; background: lightgray; font-size: 20px;}
-.Encabezado li table{text-decoration:none; display:block; padding:5px 15px; width:600px; margin-left: 100px;
-                height:30px; color:black; background: lightgray; font-size: 20px; text-align: left; caption-side: left;}
-.Encabezado nav li ul{display:none; position:relative;}
-.Encabezado nav li:hover ul{display:block;}
+.title{
+    display: flex;
+    color: blue;
+}
 
-.Sub1 h2{margin-left: 100px;}
-.Sub1 p{font-size: 20px;font-weight: 500;margin-left: 100px;}
-.Sub1 table{margin: 80px auto; background-color: white; text-align: center; width: 100%;}
-.Sub1 th{font-size: 20px;}
-.Sub1 tr{font-size: 15px;}
+header nav{
+    font-weight: 600;
+    padding-left: 40px;
+}
 
-.Sub2 img{width: 650px; height: 500px; float: left; margin-right: 30px; margin-left: 20px;}
-.Sub2 p{font-size: 20px; font-weight: 500;}
-.MenuVaccine{width: 25rem; border-radius: 0.2rem; overflow: hidden; margin-top: 40px; margin-bottom: 100px;}
-.MenuVaccine a{text-decoration: none;}
-.MenuVaccine-Item{list-style: none; border-top: 1px lightgrey; overflow: hidden;}
-.btn{display: block; padding: 1rem 1.2rem; background: lightgrey; color: black; margin-top: 10px;}
-.btn::before{content: ''; position: absolute; width: 1rem; height: 1rem; background: lightgrey; 
-             left: 1.5rem; bottom: -0.5rem; transform: rotate(45deg);}
-.MenuVaccine-Item_Sub{background:  lightgrey; overflow: hidden; transition: max-height 0.3s; max-height: 0;}
-.MenuVaccine-Item_Sub a{display: block; padding: 1rem 1.6rem; color: black;
-                        font-size: 0.9rem; position: relative; border-bottom: 2px black;}
-.MenuVaccine-Item_Sub a::before{content: ''; position: absolute; left: 0; top: 10; width: 0.4rem; height: 100%; 
-                                background: lightgrey; transform: translateX(-0.4rem); transition: 0.3s; opacity: 0;}
-.MenuVaccine-Item_Sub a:hover::before{opacity: 1; transform: translateX(0);}
-.MenuVaccine-Item:target .MenuVaccine-Item_Sub{max-height: 10cm;}
+header nav a:hover{
+    color: white;
+    background-color: blue;
+}
 
-.Sub3 img{width: 650px; height: 500px; float: right;}
-.Sub3 h2{margin-left: 100px;}
-.Sub3 p{font-size: 20px; font-weight: 500; margin-left: 100px;}
-.Sub3 table{margin: 80px auto; margin-left: 120px; background-color: white; text-align: left; width: 30%;}
-.Sub3 th{font-size: 20px; color: gray;}
-.Sub3 tr{font-size: 15px; color: gray;}
 
-.footer{width: 100%; padding: 50px 0; background: gray; bottom: 0;}
-.container_footer{display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; margin-top: 100px;}
-.box_footer{display: flex; flex-direction: column; padding: 40px;}
+/* Section */
+.container section article{
+    height: 600px;
+}
+
+/* Post 1 */
+.post1 h2{
+    width: auto;
+    margin: 0 auto;
+    padding-top: 25px;
+    font-size: 60px;
+    padding-left: 40px;
+}
+
+p{
+    font-size: 20px;
+    padding-left: 40px;
+    padding-bottom: 75px;
+}
+
+.post1 img{
+    width: 500px;
+    height: 500px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+    float: right;
+}
+
+.post1 nav{
+    padding-left: 0%;
+}
+
+.schedule{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+}
+
+.schedule >li >a{
+    background-color: lightgray;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.schedule >li:hover{
+    background-color: lightgray;
+}
+
+.information{
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+.schedule li:hover .information{
+    display: block;
+}
+
+/* Post 2 */
+.post2 table:hover{
+    justify-content: center;
+}
+
+.container h3{
+    font-size: 30px;
+    padding-left: 40px;
+}
+
+.vaccines img{
+    height: 100px;
+    width: 200px;
+}
+
+.post2 table{
+    margin: 80px auto;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+/* Post 3 */
+.post3{
+    padding-bottom: 400px;
+}
+
+.post3 img{
+    width: 500px;
+    height: 500px;
+    padding-right: 20px;
+    float: left;
+}
+
+.post3 nav{
+    width: 350px;
+    float: right;
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    font-size: 15px;
+}
+
+.post3 nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.post3 nav ul li{
+    border-bottom: 1px solid darkgray;
+}
+
+.post3 nav ul a{
+    box-sizing: border-box;
+    background: gray;
+    color: white;
+    display: block;
+    padding: 6px 10px;
+}
+
+.post3 nav ul ul{
+    height: 0px;
+    overflow: hidden;
+}
+
+.post3 nav ul li:hover ul{
+    height: auto;
+}
+
+.post3 nav ul ul a{
+    background: darkgray;
+}
+
+/* Post 4 */
+.post4 img{
+    width: 500px;
+    height: 500px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+    float: right;
+}
+
+.post4 table{
+    padding-left: 40px;
+    background-color: white;
+    text-align: center;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.post4 th{
+    font-size: 20px; 
+    color: gray;
+}
+
+.post4 tr{
+    font-size: 15px; 
+    color: gray;
+}
+
+/* Footer */
+footer{
+    padding-top: 40px;
+}
+
+footer table {
+    margin: auto;
+    background-color: darkgray;
+    text-align: center;
+    width: 100%;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+footer th{
+    font-size: 20px;
+}
+
+footer a{
+    font-size: 15px;
+    color: blue;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .title{
+        font-size: 15px;
+    }
+
+    header a{
+        font-size: 15px;
+    }
+
+    body{
+        flex-direction: column;
+    }
+
+    .container section article{
+        padding-bottom: 100px;
+    }
+
+    .post1{
+        padding-bottom: 25px;
+    }
+
+    .container h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 10px;    
+    }
+
+    .post1 img{
+        padding-top: 15px;
+        width: 150px;
+        height: 150px;
+        padding-right: 40px;
+    }
+
+    .post1 li a{
+        font-size: 10px;
+    }
+
+    .post1 li th{
+        font-size: 10px;
+    }
+    
+    .post1 li td{
+        font-size: 8px;
+    }
+
+/*Post2*/
+    .vaccines img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .container h3{
+        font-size: 15px;
+    }
+
+    .post2 th{
+        font-size: 10px;
+    }
+    
+    .post2 td{
+        font-size: 8px;
+    }
+
+/*Post3*/
+    .post3{
+        padding-bottom: 100px;
+    }
+
+    .post3 img{
+        padding-top: 15px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .post3 nav{
+        width: 150px;
+        float: right;
+        padding-top: 25px;
+        padding-right: 50px;
+        padding-bottom: 25px;
+        font-size: 10px;
+    }
+
+/*Post4*/
+    .post4 img{
+        padding-top: 15px;
+        width: 150px;
+        height: 150px;
+        padding-right: 40px;
+    }
+
+    .post4 th{
+        font-size: 10px; 
+        color: gray;
+    }
+    
+    .post4 tr{
+        font-size: 8px; 
+        padding-left: 20px;
+        color: gray;
+    }
+
+    .post4 td button{
+        height: 10px;
+    }
+
+/*Footer*/
+    footer{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+
+    footer th{
+        font-size: 10px;
+    }
+    
+    footer td{
+        font-size: 8px;
+    }
+
+    footer a{
+        font-size: 8px;
+    }
+}
