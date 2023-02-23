@@ -109,8 +109,12 @@ p{
     width: 200px;
 }
 
+.vaccines th a:hover{
+    background-color: blue;
+}
+
 .post2 table{
-    margin: 80px auto;
+    margin: auto;
     background-color: white;
     text-align: center;
     width: 100%;
