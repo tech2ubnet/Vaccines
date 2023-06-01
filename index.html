@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Vaccines</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <a class="title">
@@ -21,54 +23,65 @@
         </nav>
     </header>
 
-    <section class="container">
-        <article class="post1">
+    <section class="post-1">
+        <article>
             <h2>
-                Fight Virus<br> With Vaccines 
-                <img src="img/Nurse.webp">
+                Fight Virus<br> With Vaccines
             </h2>
             <p>
                 Let's stop this pandemic by killing the virus <br>
                 with vaccine, don't let yoursealf and your<br>
                 familiy get infected
-                <nav>
-                    <ul class="schedule">
-                        <li>
-                            <a>Schedule your vaccine</a>
-                            <ul class="information"><table>
+            </p>
+            <nav>
+                <ul class="schedule">
+                    <li>
+                        <a>Schedule your vaccination</a>
+                        <ul class="information">
+                            <table>
                                 <tr>
                                     <th>Location</th>
                                     <th>Date</th>
-                                    <th>Vaccine</th>
+                                    <th>Vaccine Type</th>
                                 </tr>
                                 <tr>
                                     <td>Jakarta Utara</td>
                                     <td>08 July 2021</td>
-                                    <td>Moderna</td>
-                                </tr>
-                            </table></ul>
-                        </li>
-                    </ul>
-                </nav>
-            </p>
+                                    <td>Moderna
+                                    <td>
+                                    <td><button type="submit" class="button">Submit</button></td>
+                                <tr>
+                            </table>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </article>
-        
-        <article class="post2">
+
+        <aside><img src="./img/Nurse.jpg" alt="Nurse"></aside>
+    </section>
+
+    <section class="post-2">
+        <article>
             <table class="vaccines">
                 <tr>
-                    <th><a href="https://covid19.astrazeneca.com/" class="nav-link"><img src="img/AstraZeneca.png"></a></th>
-                    <th><a href="https://www.sinovac.com/product/showproduct.php?id=41&lang=en" class="nav-link"><img src="img/Sinovac.png"></a></th>
-                    <th><a href="https://www.pfizer.com/science/coronavirus/vaccine/rapid-progress" class="nav-link"><img src="img/Pfizer.png"></a></th>
-                    <th><a href="https://eua.modernatx.com/covid19vaccine-eua/providers/about-vaccine" class="nav-link"><img src="img/Moderna.png"></a></th>
+                    <th><a href="https://covid19.astrazeneca.com/" class="nav-link"><img src="img/AstraZeneca.png"></a>
+                    </th>
+                    <th><a href="https://www.sinovac.com/product/showproduct.php?id=41&lang=en" class="nav-link"><img
+                                src="img/Sinovac.png"></a></th>
+                    <th><a href="https://www.pfizer.com/science/coronavirus/vaccine/rapid-progress"
+                            class="nav-link"><img src="img/Pfizer.png"></a></th>
+                    <th><a href="https://eua.modernatx.com/covid19vaccine-eua/providers/about-vaccine"
+                            class="nav-link"><img src="img/Moderna.png"></a></th>
                 </tr>
             </table>
-
 
             <h3>Why should I vaccine?</h3>
             <p>In order to avoid any doubts about getting the code COVID-19<br>
                 vaccine identify the following 4 benefits of COVID-19<br>
                 vaccination
             </p>
+
             <table>
                 <tr>
                     <th>Minimize the<br>spread of viruses</th>
@@ -98,11 +111,14 @@
                 </tr>
             </table>
         </article>
+    </section>
 
-        <article class="post3">
+    <section class="post-3">
+        <aside><img src="img/FaceMask.jpeg" alt="FaceMask"></aside>
+
+        <article>
             <h3>
                 Preparations before vacinne
-                <img src="img/FaceMask.jpeg">
             </h3>
             <p>
                 the success of vaccines is strongly influenced by the<br>
@@ -120,8 +136,8 @@
                     <li><a>Avoid stress</a>
                         <ul>
                             <li><a>Stress has a profound effect on immune work.<br>
-                                Moreover, prolonged stress can increase cortisol<br>
-                                production and oxidative stress in the body</a></li>
+                                    Moreover, prolonged stress can increase cortisol<br>
+                                    production and oxidative stress in the body</a></li>
                         </ul>
                     </li>
                     <li><a>Eat healthy food</a>
@@ -142,11 +158,12 @@
                 </ul>
             </nav>
         </article>
-        
-        <article class="post4">
+    </section>
+
+    <section class="post-4">
+        <article>
             <h3>
                 Emergency Contact
-                <img src="img/Doc.jpg">
             </h3>
             <p>
                 Contact one of the contacts below if you or your family feel<br>
@@ -163,8 +180,8 @@
                     <td>covid-19@vaccines.com</td>
                 </tr>
                 <tr>
-                    <td><input type="button" id="button" name="call" value="Call Now"></td>
-                    <td><input type="button" id="button" name="chat" value="Chat Now"></td>
+                    <td><input type="button" id="button" name="call" class="button" value="Call Now"></td>
+                    <td><input type="button" id="button" name="chat" class="button" value="Chat Now"></td>
                 </tr>
                 <tr>
                     <th>Video Call</th>
@@ -175,13 +192,15 @@
                     <td>021.123.145.14 </td>
                 </tr>
                 <tr>
-                    <td><input type="button" id="button" name="videocall" value="Videocall Now"></td>
-                    <td><input type="button" id="button" name="message" value="Message Now"></td>
+                    <td><input type="button" id="button" name="videocall" class="button" value="Videocall Now"></td>
+                    <td><input type="button" id="button" name="message" class="button" value="Message Now"></td>
                 </tr>
             </table>
         </article>
+
+        <aside><img src="img/Doc.jpg"></aside>
     </section>
-    
+
     <footer>
         <table>
             <tr>
@@ -215,4 +234,5 @@
         </table>
     </footer>
 </body>
+
 </html>
